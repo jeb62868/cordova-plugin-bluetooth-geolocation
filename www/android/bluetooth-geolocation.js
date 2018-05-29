@@ -243,8 +243,8 @@ function initExternalGPS(device) {
                 'velocity': gps.state.speed && gps.state.speed * 0.514444,
                 
                 // Guess 7.8 meters 95% interval as base accuracy
-                'accuracy': gps.state.hdop && gps.state.hdop * 4,
-                'verticalAccuracy': gps.state.vdop && gps.state.vdop * 4 // ?
+                'accuracy': gps.state.hdop && gps.state.hdop * 1,
+                'verticalAccuracy': gps.state.vdop && gps.state.vdop * 1 // ?
             },
             gps.state.time.getTime()
         );
